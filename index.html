@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full marks project</title>
+    <link rel="stylesheet" href="styleproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="pic-3.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+        <img src="logo.png" class="logo">
+        <nav>
+            <ul>
+                <li id="HOME"><a href="">HOME</a></li>
+                <li id="REGION"><a href="">REGION</a>
+                <li id="ABOUT"><a href="">ABOUT</a>
+            </ul>
+        </nav>
+        <img src="menu.png" class="menu">
+        </div>
+    <div class="row">
+         <div class="col">
+            <h1>SAHARA</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quo impedit mollitia amet repellendus officiis sed corporis similique! Nisi, reprehenderit. Quas assumenda voluptatum nisi voluptate aspernatur a corrupti, illo odio? Assumenda nam earum eaque asperiores magni fuga ut dicta dolorum animi quam nobis non minima reprehenderit fugit, necessitatibus reiciendis labore id, sequi eligendi, dolor accusantium perferendis explicabo odit! Asperiores error vitae dignissimos id laborum commodi blanditiis enim voluptatum autem porro?welcome to sahara tourism a place which give you chance to visit world,we are providing you very cheap and lifetime remembering memory</p>
+           <button id="explore">explore</button>
+        </div>
+        <div class="col">
+            <div class="card card1">
+                <h5>Western desert</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorum voluptatibus magni ex molestias, animi, perspiciatis cumque iusto quaerat, harum quibusdam! Minus alias fuga aliquam explicabo delectus assumenda a odit!</p>
+            </div>
+            <div class="card card2">
+                <h5>AI bagawat</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas enim fugit ex dicta aliquam, dolore distinctio iusto dolor? Sint illo iste quis a unde laboriosam sequi distinctio soluta nostrum?</p>
+            </div>
+            <div class="card card3">
+                <h5>pyramind of gizza</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae asperiores tenetur fuga vitae eum ad, voluptatibus adipisci nulla iure doloribus illo illum architecto debitis. Quaerat, aliquam? Ad, eos culpa.
+                </p>
+            </div>
+            <div class="card card4">
+                <h5>kalhari desert</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus perferendis facilis iure reiciendis quod nobis dicta nam accusamus impedit vitae eligendi provident, dolor sit, nemo, non nihil deleniti? Fuga, repellat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fabs" onclick="toggleBtn()">
+        <div class="action">
+          <i class="fas fa-plus" id="add"></i>
+          <i class="fas fa-times" id="remove" style="display: none"></i>
+        </div>
+  
+        <div class="btns">
+          <a href=https://www.facebook.com/ target="_blank" class="btn" style="background: #3b5999"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href=https://twitter.com/i/flow/login target="_blank" class="btn" style="background: #55acee"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.whatsapp.com/" target="_blank" class="btn" style="background: #25D366"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank" class="btn" style="background:#e4405f"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </body>
+    <script>
+      function toggleBtn() {
+        const Btns = document.querySelector(".btns");
+        const add = document.getElementById("add");
+        const remove = document.getElementById("remove");
+        const btn = document.querySelector(".btns").querySelectorAll("a");
+        Btns.classList.toggle("open");
+        if (Btns.classList.contains("open")) {
+          remove.style.display = "block";
+          add.style.display = "none";
+          btn.forEach((e, i) => {
+            setTimeout(() => {
+              bottom = 40 *i;
+              e.style.bottom = bottom + "px";
+              // console.log(e);
+            }, 100 * i);
+          });
+        } else {
+          add.style.display = "block";
+          remove.style.display = "none";
+          btn.forEach((e, i) => {
+            e.style.bottom = "0px";
+          });
+        }
+      }
+    $(document).ready(function() {
+    $("#HOME").click(function() {
+    alert("You are already on home page");
+    });
+    });
+    $(document).ready(function() {
+    $("#ABOUT").click(function() {
+    alert("This Website is created by the group G-30 and from roll no. 0986-0989 we used basic html,css,js to design social media buttons");
+    });
+    });
+    $(document).ready(function() {
+    $("#explore").click(function() {
+     let a=prompt("Enter a place where you want to visit")
+    //  document.writeln("Thankyou for entering your choice "+a)
+     
+     document.writeln("toh mei kiya karru")
+    });
+    });
+    $(document).ready(function() {
+    $("#REGION").click(function() {
+    alert("You clicked on region");
+    });
+    });
+    $(document).ready(function() {
+    $(".menu").click(function() {
+    document.writeln("(1)YOGESH <br>  (2)Yugam <br>  (3)Yukti <br> (4)Yuvraj");
+    });
+    });
+    $(document).ready(function() {
+    $(".logo").click(function() {
+    alert("You clicked on logo");
+    });
+    });
+</script>
+    
+    </div>
+    
+</body>
+</html>
