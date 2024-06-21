@@ -5,7 +5,7 @@
 .container{
     width:100vw;
     height:100vh;
-    background-image:url('background.png');
+    background-image:url('images/background.png');
     background-position: center;
     background-size:cover;
     padding-left: 8%;
@@ -85,16 +85,16 @@ button{
   transition:  transform 0.5; 
 }
 .card1{
-    background-image: url(pic-1.png);
+    background-image: url(images/pic-1.png);
 }
 .card2{
-    background-image: url(pic-2.png);
+    background-image: url(images/pic-2.png);
 }
 .card3{
-    background-image: url(pic-3.png);
+    background-image: url(images/pic-3.png);
 }
 .card4{
-    background-image: url(pic-4.png);
+    background-image: url(images/pic-4.png);
 }
 .card:hover{
     transform: translateY(-10px);
